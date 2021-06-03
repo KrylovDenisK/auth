@@ -37,7 +37,7 @@ public class PersonController {
 
     @PostMapping("/")
     public ResponseEntity<Person> create(@RequestBody Person person) {
-       return new ResponseEntity<>(persons.save(person), HttpStatus.CREATED);
+        return new ResponseEntity<>(persons.save(person), HttpStatus.CREATED);
     }
 
     @PutMapping("/")
